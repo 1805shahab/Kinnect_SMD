@@ -29,18 +29,18 @@ class LoginHomeMenuLogoutTest {
     @Test
     fun login_home_menu_logout_returnsToLoginWithEmptyBackStack() {
         // 1) On Login: tap the "Log in" button -> Home.
-        onView(withId(R.id.login_button)).perform(click())
+        onView(withId(R.id.btnLogin)).perform(click())
 
         // 2) On Home: tap the Menu tab on the bottom navigation.
-        onView(withId(R.id.nav_menu)).perform(click())
+        onView(withId(R.id.tabMenu)).perform(click())
 
         // 3) On Menu fragment: tap the Logout row -> returns to Login, back stack cleared.
         onView(withId(R.id.menu_logout_row)).perform(click())
 
         // 4) We are back on Login. Verify the create-account link is visible.
-        onView(withId(R.id.login_create_account)).check(matches(isDisplayed()))
+        onView(withId(R.id.btnCreateAccount)).check(matches(isDisplayed()))
 
         // 5) Verify the Login button is still shown (we stayed on Login).
-        onView(withId(R.id.login_button)).check(matches(isDisplayed()))
+        onView(withId(R.id.btnLogin)).check(matches(isDisplayed()))
     }
 }
