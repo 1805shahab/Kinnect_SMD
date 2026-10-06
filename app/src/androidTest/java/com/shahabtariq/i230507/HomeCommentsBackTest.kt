@@ -5,7 +5,6 @@ import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.isRoot
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -31,18 +30,18 @@ class HomeCommentsBackTest {
     @Test
     fun home_comments_back_returnsToHome() {
         // 1) Login -> Home.
-        onView(withId(R.id.login_button)).perform(click())
+        onView(withId(R.id.btnLogin)).perform(click())
 
         // 2) On Home: tap the first post's comment action button -> Comments.
-        onView(withId(R.id.btn_comment)).perform(click())
+        onView(withId(R.id.btnOpenComments)).perform(click())
 
         // 3) Verify the Comments screen is shown by checking its back button.
-        onView(withId(R.id.comments_back)).check(matches(isDisplayed()))
+        onView(withId(R.id.tvCommentsBack)).check(matches(isDisplayed()))
 
         // 4) Press Back -> returns to Home.
         pressBack()
 
         // 5) Verify we are back on Home (bottom nav is displayed).
-        onView(withId(R.id.bottom_navigation)).check(matches(isDisplayed()))
+        onView(withId(R.id.tabHome)).check(matches(isDisplayed()))
     }
 }
