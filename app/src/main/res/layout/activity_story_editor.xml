@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#111111">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="80dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image5" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="30dp" android:layout_marginTop="120dp"
+            android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_rust" android:paddingHorizontal="20dp" android:paddingVertical="10dp" android:rotation="2"
+            android:text="Saturday plans" android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dp">
+            <ImageButton android:id="@+id/story_editor_close" android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000"
+                android:padding="11dp" android:src="@drawable/ic_close" app:tint="@color/white" android:contentDescription="@null" />
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:padding="11dp" android:src="@drawable/ic_people" app:tint="@color/white" />
+            <LinearLayout android:id="@+id/tool_text" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginStart="6dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:gravity="center" android:clickable="true" android:focusable="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aa" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView android:layout_width="44dp" android:layout_height="44dp" android:layout_marginStart="6dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:padding="11dp" android:src="@drawable/ic_emoji_smile" app:tint="@color/white" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_marginStart="6dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:gravity="center" android:text="♫" android:textColor="@color/white" android:textSize="18sp" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_marginStart="6dp" android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:gravity="center" android:text="✦" android:textColor="@color/white" android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center_vertical" android:paddingHorizontal="8dp" android:paddingBottom="14dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:background="@drawable/kn_pill_gray" android:backgroundTint="#2A2A2A" android:gravity="center" android:paddingHorizontal="12dp">
+            <TextView android:layout_width="26dp" android:layout_height="26dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal" android:gravity="center" android:text="JW" android:textColor="@color/white" android:textSize="9sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Your story" android:textColor="@color/white" android:textSize="15sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginStart="8dp" android:background="@drawable/kn_pill_gray" android:backgroundTint="#2A2A2A" android:gravity="center" android:paddingHorizontal="12dp">
+            <TextView android:layout_width="26dp" android:layout_height="26dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" android:gravity="center" android:text="★" android:textColor="@color/white" android:textSize="13sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Close friends" android:textColor="@color/white" android:textSize="15sp" android:textStyle="bold" />
+        </LinearLayout>
+        <TextView android:id="@+id/story_editor_share" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginStart="8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal"
+            android:gravity="center" android:text="→" android:textColor="@color/white" android:textSize="24sp" android:clickable="true" android:focusable="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="12dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp" android:src="@drawable/ic_arrow_back" app:tint="@color/kn_text" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp"
+            android:text="@string/chats_title" android:textColor="@color/kn_text" android:textSize="26sp" android:textStyle="bold" />
+        <ImageView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_chip"
+            android:padding="11dp" android:src="@drawable/ic_pencil" app:tint="@color/kn_text" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginHorizontal="16dp"
+        android:background="@drawable/kn_pill_gray" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_search" android:tint="@color/kn_text2" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:text="Search" android:textColor="@color/kn_text2" android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="8dp" android:paddingVertical="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <TextView android:layout_width="56dp" android:layout_height="56dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_chip" android:gravity="center" android:text="+" android:textColor="@color/kn_text" android:textSize="24sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Your note" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Aisha" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_green" android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Omar" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_indigo" android:gravity="center" android:text="SI" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Sara" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_brown" android:gravity="center" android:text="HA" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Hamza" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/chat_list_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aisha Khan" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sending the photos tonight · 2m" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+            </LinearLayout>
+            <View android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <TextView android:layout_width="38dp" android:layout_height="38dp" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="#6B5E1F" android:gravity="center" android:text="MC" android:textColor="@color/white" android:textSize="12sp" android:textStyle="bold" />
+                <TextView android:layout_width="38dp" android:layout_height="38dp" android:layout_alignParentBottom="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_blue" android:gravity="center" android:text="ZR" android:textColor="@color/white" android:textSize="12sp" android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Design crew" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maya: the new mockups look clean · 15m" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+            </LinearLayout>
+            <View android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <TextView android:layout_width="54dp" android:layout_height="54dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_purple" android:gravity="center" android:text="LM" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lina Marsh" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You: See you at the pier · 1h" android:textColor="@color/kn_text2" android:textSize="14sp" />
+            </LinearLayout>
+            <View android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_green" android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+                <View android:layout_width="13dp" android:layout_height="13dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Omar Farooq" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Haha that story was wild · 3h" android:textColor="@color/kn_text2" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <TextView android:layout_width="54dp" android:layout_height="54dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_purple" android:gravity="center" android:text="BA" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bilal Ahmed" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thanks, bro! · Mon" android:textColor="@color/kn_text2" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="7dp">
+            <TextView android:layout_width="54dp" android:layout_height="54dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_green" android:gravity="center" android:text="NF" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Noor Fatima" android:textColor="@color/kn_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You: Happy birthday! · Sun" android:textColor="@color/kn_text2" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_video_call" android:tint="@color/kn_teal" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chats" android:textColor="@color/kn_teal" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_people" android:tint="@color/kn_text2" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="People" android:textColor="@color/kn_text2" android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_videocam" android:tint="@color/kn_text2" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stories" android:textColor="@color/kn_text2" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

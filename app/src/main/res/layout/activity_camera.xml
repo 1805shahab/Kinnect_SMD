@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#111111">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginHorizontal="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="110dp"
+        android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_cam">
+
+        <View android:layout_width="140dp" android:layout_height="140dp" android:layout_alignParentEnd="true"
+            android:layout_marginTop="150dp" android:layout_marginEnd="-60dp"
+            android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_sun" />
+        <View android:layout_width="match_parent" android:layout_height="230dp" android:layout_alignParentBottom="true"
+            android:background="@drawable/kn_square_tint" android:backgroundTint="#628050" />
+
+        <ImageView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="12dp"
+            android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:padding="11dp"
+            android:src="@drawable/ic_brightness" app:tint="@color/white" />
+        <ImageButton android:id="@+id/camera_close" android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_alignParentEnd="true" android:layout_margin="12dp" android:background="@drawable/kn_circle"
+            android:backgroundTint="#66000000" android:padding="11dp" android:src="@drawable/ic_close"
+            app:tint="@color/white" android:contentDescription="@null" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:gravity="center_vertical" android:paddingHorizontal="12dp" android:paddingBottom="16dp">
+            <View android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_cover_sky" />
+            <ImageButton android:id="@+id/btn_flash" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginStart="12dp"
+                android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:padding="11dp"
+                android:src="@drawable/ic_flash" app:tint="@color/white" android:contentDescription="@null" />
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <RelativeLayout android:layout_width="72dp" android:layout_height="72dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="#99FFFFFF" />
+                <View android:layout_width="56dp" android:layout_height="56dp" android:layout_centerInParent="true" android:background="@drawable/kn_circle" />
+            </RelativeLayout>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <ImageButton android:id="@+id/btn_flip" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginEnd="12dp"
+                android:background="@drawable/kn_circle" android:backgroundTint="#66000000" android:padding="11dp"
+                android:src="@drawable/ic_flip_camera" android:tint="@color/white" android:contentDescription="@null" />
+            <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/kn_circle"
+                android:backgroundTint="#66000000" android:padding="11dp" android:src="@drawable/ic_mood" android:tint="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:gravity="center" android:paddingBottom="28dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:text="TEXT" android:textColor="#B3FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:text="LIVE" android:textColor="#B3FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:id="@+id/camera_mode_story" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:text="STORY" android:textColor="@color/white" android:textSize="13sp" android:textStyle="bold" />
+        <TextView android:id="@+id/camera_mode_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:text="POST" android:textColor="#B3FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:text="BOOMERANG" android:textColor="#B3FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

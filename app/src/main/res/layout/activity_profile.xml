@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white" android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52dp" android:paddingHorizontal="12dp">
+        <TextView android:id="@+id/ivProfileBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:padding="6dp"
+            android:text="‹" android:textColor="@color/kn_text" android:textSize="30sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="40dp"
+            android:text="Jacob West" android:textColor="@color/kn_text" android:textSize="19sp" android:textStyle="bold" />
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:padding="6dp"
+            android:src="@drawable/ic_search" app:tint="@color/kn_text" />
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/kn_border" />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp">
+        <RelativeLayout android:id="@+id/coverPhoto" android:layout_width="match_parent" android:layout_height="130dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image5" />
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_margin="10dp"
+                android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_chip" android:padding="9dp" android:src="@drawable/ic_camera" app:tint="@color/kn_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="120dp" android:layout_height="120dp" android:layout_alignParentBottom="true" android:layout_marginStart="16dp">
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" />
+            <TextView android:layout_width="110dp" android:layout_height="110dp" android:layout_centerInParent="true" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal"
+                android:gravity="center" android:text="JW" android:textColor="@color/white" android:textSize="38sp" android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jacob West" android:textColor="@color/kn_text" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="834 friends" android:textColor="@color/kn_text2" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Digital goodies designer. Everything is designed." android:textColor="@color/kn_text" android:textSize="14sp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:id="@+id/btnAddStory" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1.2" android:background="@drawable/kn_pill_teal" android:backgroundTint="@null"
+                android:text="+ Add to story" android:textAllCaps="false" android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold" />
+            <Button android:id="@+id/btnEditProfile" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1.2" android:layout_marginStart="8dp" android:background="@drawable/kn_pill_gray" android:backgroundTint="@null"
+                android:text="✎ Edit profile" android:textAllCaps="false" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+            <ImageView android:layout_width="50dp" android:layout_height="44dp" android:layout_marginStart="8dp" android:background="@drawable/kn_pill_gray" android:padding="13dp" android:src="@drawable/ic_more_horiz" app:tint="@color/kn_text" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="34dp" android:background="@drawable/kn_pill_gray" android:backgroundTint="#E0EDED" android:gravity="center" android:paddingHorizontal="16dp" android:text="Posts" android:textColor="@color/kn_teal" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="34dp" android:gravity="center" android:paddingHorizontal="16dp" android:text="Photos" android:textColor="@color/kn_text2" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="34dp" android:gravity="center" android:paddingHorizontal="16dp" android:text="Videos" android:textColor="@color/kn_text2" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="34dp" android:gravity="center" android:paddingHorizontal="16dp" android:text="Groups" android:textColor="@color/kn_text2" android:textSize="14sp" android:textStyle="bold" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp" android:background="@color/kn_border" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Details" android:textColor="@color/kn_text" android:textSize="20sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="34dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_store" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Designer at Pixsellz" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="34dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_people" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Studied at FAST-NUCES" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="34dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_pin" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Lives in Karachi, Pakistan" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="34dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_event" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Joined March 2019" android:textColor="@color/kn_text" android:textSize="15sp" />
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Friends" android:textColor="@color/kn_text" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Find friends" android:textColor="@color/kn_teal" android:textSize="14sp" android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_purple" android:gravity="center" android:text="LM" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_green" android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

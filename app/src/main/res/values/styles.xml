@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Kinnect" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/kinnect_teal</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/kinnect_teal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Splash + Login -->
+    <style name="Theme.Kinnect.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/kinnect_teal</item>
+        <item name="android:colorBackground">@color/kinnect_teal</item>
+        <item name="android:windowBackground">@color/kinnect_teal</item>
+        <item name="android:statusBarColor">@color/kinnect_teal</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Camera -->
+    <style name="Theme.Kinnect.Camera" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Story viewer -->
+    <style name="Theme.Kinnect.Story" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.Kinnect.StoryRing" parent="">
+        <item name="android:padding">3dp</item>
+    </style>
+</resources>

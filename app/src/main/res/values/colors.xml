@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand / Primary Colors -->
+    <color name="kinnect_teal">#0B5C57</color>
+    <color name="kinnect_teal_dark">#084743</color>
+    <color name="kinnect_teal_light">#E6F0EF</color>
+    <color name="primary_teal">#0B5C57</color>
+    <color name="teal_light">#E6F0EF</color>
+
+    <!-- Neutrals & Backgrounds -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bg_light">#F6F7F8</color>
+    <color name="bg_gray">#F6F7F8</color>
+    <color name="bg_gray_light">#FAFAFA</color>
+    <color name="divider_gray">#E2E5E8</color>
+    <color name="border_gray">#E2E5E8</color>
+    <color name="border">#E2E5E8</color>
+    <color name="text_primary">#1C1E21</color>
+    <color name="text_secondary">#65676B</color>
+    <color name="text_tertiary">#9AA0A6</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_muted_white">#E0E0E0</color>
+    <color name="input_bg">#F0F2F5</color>
+    <color name="icon_bg">#F0F2F5</color>
+    <color name="bg_chip">#F0F2F5</color>
+    <color name="bg_page">#F6F7F8</color>
+
+    <!-- Avatars & Reaction Badges -->
+    <color name="avatar_jw">#0B5C57</color>
+    <color name="avatar_of">#22463F</color>
+    <color name="avatar_si">#3E4C7A</color>
+    <color name="avatar_ha">#6E5848</color>
+    <color name="avatar_ak">#7B2C3F</color>
+    <color name="avatar_zr">#2E5266</color>
+    <color name="badge_red">#E41E3F</color>
+    <color name="badge_orange">#E53E3E</color>
+    <color name="online_green">#31A24C</color>
+    <color name="link_blue">#0064A3</color>
+    <color name="price_green">#0D9488</color>
+    <color name="rust">#C85A32</color>
+    <color name="brown">#8B5A2B</color>
+    <color name="forest">#2D7A5C</color>
+    <color name="indigo">#5858AC</color>
+    <color name="maroon">#800000</color>
+    <color name="olive">#556B2F</color>
+    <color name="plum">#7C529F</color>
+    <color name="steel_blue">#4682B4</color>
+    <color name="mustard">#E6A100</color>
+    <color name="love_red">#E53935</color>
+
+    <!-- Photo tones -->
+    <color name="photo_sage">#A8C3A8</color>
+    <color name="photo_rose">#E8A8A8</color>
+    <color name="photo_sand">#E8D8A8</color>
+
+    <color name="kn_teal">#0B6061</color>
+    <color name="kn_rust">#B84A2A</color>
+    <color name="kn_bg">#F3F1ED</color>
+    <color name="kn_chip">#ECE9E3</color>
+    <color name="kn_border">#D9D5CD</color>
+    <color name="kn_text">#1F1D1A</color>
+    <color name="kn_text2">#6B665E</color>
+    <color name="kn_love">#C93450</color>
+    <color name="kn_gold">#C98A10</color>
+    <color name="kn_online">#2EA85A</color>
+    <color name="kn_purple">#7B4F7E</color>
+    <color name="kn_green">#2E6E4E</color>
+    <color name="kn_indigo">#4B4F94</color>
+    <color name="kn_brown">#8A5A2B</color>
+    <color name="kn_maroon">#9B3A4E</color>
+    <color name="kn_blue">#3E6E8E</color>
+    <color name="kn_cam">#CBD9C0</color>
+    <color name="kn_sun">#F2E8C7</color>
+</resources>

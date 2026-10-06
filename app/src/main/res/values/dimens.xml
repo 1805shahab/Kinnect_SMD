@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common dimens used across screens -->
+    <dimen name="screen_horizontal_padding">16dp</dimen>
+    <dimen name="screen_vertical_padding">12dp</dimen>
+    <dimen name="card_corner">12dp</dimen>
+    <dimen name="card_corner_large">20dp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="avatar_size_large">120dp</dimen>
+    <dimen name="avatar_size_medium">48dp</dimen>
+    <dimen name="icon_button_size">36dp</dimen>
+    <dimen name="post_image_height">320dp</dimen>
+    <dimen name="cover_height">180dp</dimen>
+    <dimen name="story_ring_size">64dp</dimen>
+    <dimen name="bottom_nav_height">56dp</dimen>
+    <dimen name="header_icon_size">22dp</dimen>
+    <dimen name="market_grid_card_height">200dp</dimen>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinnect</string>
+    <string name="default_web_client_id">kinnect.web</string>
+
+    <!-- Splash -->
+    <string name="splash_from">from</string>
+    <string name="splash_company">SMD</string>
+
+    <!-- Login -->
+    <string name="login_title">Log in</string>
+    <string name="login_email_hint">Email or phone</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Log in</string>
+    <string name="login_forgot">Forgot password?</string>
+    <string name="login_or">or</string>
+    <string name="login_create_account">Create new account</string>
+    <string name="login_signup_button">Create new Facebook account</string>
+
+    <!-- Signup -->
+    <string name="signup_title">Sign up</string>
+    <string name="signup_first">First name</string>
+    <string name="signup_last">Last name</string>
+    <string name="signup_email">Mobile number or email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_dob">Date of birth</string>
+    <string name="signup_gender">Gender</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="signup_already">Already have an account?</string>
+    <string name="signup_already_login">Log in</string>
+
+    <!-- Home -->
+    <string name="home_logo">kinnect</string>
+    <string name="home_search_hint">Search Kinnect</string>
+    <string name="home_tab_home">Home</string>
+    <string name="home_tab_friends">Friends</string>
+    <string name="home_tab_marketplace">Marketplace</string>
+    <string name="home_tab_notifications">Notifications</string>
+    <string name="home_tab_menu">Menu</string>
+
+    <!-- Stories -->
+    <string name="add_story">Add to story</string>
+    <string name="view_story">View story</string>
+
+    <!-- Post -->
+    <string name="post_what">What\'s on your mind?</string>
+    <string name="post_live">Live</string>
+    <string name="post_photo">Photo</string>
+    <string name="post_room">Room</string>
+    <string name="action_like">Like</string>
+    <string name="action_comment">Comment</string>
+    <string name="action_share">Share</string>
+
+    <!-- Reaction picker -->
+    <string name="react_like">Like</string>
+    <string name="react_love">Love</string>
+    <string name="react_haha">Haha</string>
+    <string name="react_wow">Wow</string>
+    <string name="react_sad">Sad</string>
+    <string name="react_angry">Angry</string>
+
+    <!-- Comments -->
+    <string name="comments_title">Comments</string>
+    <string name="comments_hint">Write a comment…</string>
+    <string name="comments_most_recent">Most relevant</string>
+
+    <!-- Create post -->
+    <string name="create_post_title">Create post</string>
+    <string name="create_post_hint">What\'s on your mind?</string>
+    <string name="create_post_publish">Post</string>
+
+    <!-- Photo picker -->
+    <string name="photo_picker_title">Select from gallery</string>
+    <string name="photo_picker_camera">Camera</string>
+
+    <!-- Camera -->
+    <string name="camera_capture">Capture</string>
+    <string name="camera_flip">Flip</string>
+    <string name="camera_flash">Flash</string>
+    <string name="camera_story_mode">Story</string>
+    <string name="camera_post_mode">Post</string>
+
+    <!-- Story editor -->
+    <string name="story_editor_title">Edit story</string>
+    <string name="story_editor_share">Share to story</string>
+    <string name="story_editor_text">Aa</string>
+    <string name="story_editor_doodle">Doodle</string>
+    <string name="story_editor_sticker">Sticker</string>
+
+    <!-- Story viewer -->
+    <string name="story_viewer_reply">Send message</string>
+
+    <!-- Your story -->
+    <string name="your_story_title">Your story</string>
+    <string name="your_story_create">Create story</string>
+
+    <!-- Search -->
+    <string name="search_recent">Recent searches</string>
+    <string name="search_see_all">See all</string>
+
+    <!-- Friends -->
+    <string name="friends_title">Friends</string>
+    <string name="friends_suggestions">People you may know</string>
+    <string name="friends_requests">Friend requests</string>
+    <string name="friends_confirm">Confirm</string>
+    <string name="friends_delete">Delete</string>
+
+    <!-- Profile -->
+    <string name="profile_edit">Edit profile</string>
+    <string name="profile_add_story">Add to story</string>
+    <string name="profile_friends">Friends</string>
+    <string name="profile_photos">Photos</string>
+    <string name="profile_details">Details</string>
+    <string name="profile_posts">Posts</string>
+    <string name="profile_save">Save</string>
+
+    <!-- Edit profile -->
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="edit_profile_name">Name</string>
+    <string name="edit_profile_bio">Bio</string>
+    <string name="edit_profile_email">Email</string>
+    <string name="edit_profile_phone">Phone</string>
+    <string name="edit_profile_save">Save changes</string>
+
+    <!-- Other profile -->
+    <string name="other_add_friend">Add friend</string>
+    <string name="other_message">Message</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">Notifications</string>
+    <string name="notif_new">New</string>
+    <string name="notif_seen">Seen</string>
+    <string name="notif_mark_all">Mark all as read</string>
+
+    <!-- Menu -->
+    <string name="menu_title">Menu</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_groups">Groups</string>
+    <string name="menu_memories">Memories</string>
+    <string name="menu_saved">Saved</string>
+    <string name="menu_marketplace">Marketplace</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help &amp; support</string>
+
+    <!-- Chats -->
+    <string name="chats_title">Chats</string>
+    <string name="chats_search">Search</string>
+
+    <!-- Chat -->
+    <string name="chat_message_hint">Aa</string>
+
+    <!-- Voice call -->
+    <string name="call_mute">Mute</string>
+    <string name="call_speaker">Speaker</string>
+    <string name="call_end">End</string>
+    <string name="call_video">Video</string>
+    <string name="call_add">Add</string>
+    <string name="call_connecting">Kinnect voice call…</string>
+
+    <!-- Marketplace -->
+    <string name="mp_title">Marketplace</string>
+    <string name="mp_sell">Sell</string>
+    <string name="mp_categories">Categories</string>
+    <string name="mp_today_picks">Today\'s picks</string>
+    <string name="mp_location">Karachi · 40 km</string>
+    <string name="mp_just_listed">JUST LISTED</string>
+</resources>

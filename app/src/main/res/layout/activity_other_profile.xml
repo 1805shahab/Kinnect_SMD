@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white" android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52dp" android:paddingHorizontal="12dp">
+        <ImageButton android:id="@+id/other_profile_back" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerVertical="true"
+            android:background="@null" android:padding="6dp" android:src="@drawable/ic_arrow_back" app:tint="@color/kn_text" android:contentDescription="@null" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="48dp"
+            android:text="Omar Farooq" android:textColor="@color/kn_text" android:textSize="19sp" android:textStyle="bold" />
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            android:padding="6dp" android:src="@drawable/ic_search" android:tint="@color/kn_text" />
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/kn_border" />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="120dp" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image6" />
+        <RelativeLayout android:layout_width="116dp" android:layout_height="116dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal" />
+            <View android:layout_width="110dp" android:layout_height="110dp" android:layout_centerInParent="true" android:background="@drawable/kn_circle" />
+            <TextView android:layout_width="102dp" android:layout_height="102dp" android:layout_centerInParent="true" android:background="@drawable/kn_circle"
+                android:backgroundTint="@color/kn_green" android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="36sp" android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="Omar Farooq" android:textColor="@color/kn_text" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="1,204 friends · 38 mutual" android:textColor="@color/kn_text2" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="4dp" android:text="Night photographer. Karachi after dark." android:textColor="@color/kn_text" android:textSize="14sp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:id="@+id/btn_add_friend_other" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1.2" android:background="@drawable/kn_pill_teal"
+                android:backgroundTint="@null" android:text="@string/other_add_friend" android:textAllCaps="false" android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold" />
+            <Button android:id="@+id/btn_message_other" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1.2" android:layout_marginStart="8dp" android:background="@drawable/kn_pill_gray"
+                android:backgroundTint="@null" android:text="@string/other_message" android:textAllCaps="false" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+            <ImageView android:layout_width="52dp" android:layout_height="46dp" android:layout_marginStart="8dp" android:background="@drawable/kn_pill_gray" android:padding="13dp" android:src="@drawable/ic_more_horiz" android:tint="@color/kn_text" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:gravity="center_vertical">
+            <TextView android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Friends with Aisha Khan, Lina Marsh and 36 others" android:textColor="@color/kn_text2" android:textSize="13sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="10dp" android:background="@color/kn_border" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="36dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_store" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Photographer at Studio Nocturne" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="36dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_pin" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Lives in Karachi, Pakistan" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="36dp" android:gravity="center_vertical" android:drawableStart="@drawable/ic_event" android:drawableTint="@color/kn_text2" android:drawablePadding="14dp" android:text="Joined June 2017" android:textColor="@color/kn_text" android:textSize="15sp" />
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Photos" android:textColor="@color/kn_text" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="See all" android:textColor="@color/kn_teal" android:textSize="14sp" android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image1" />
+            <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1" android:layout_marginHorizontal="6dp" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image2" />
+            <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/kn_bg"
+    android:orientation="vertical" android:paddingHorizontal="20dp" android:paddingTop="12dp">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tvBackSignUp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="‹   Create account" android:textColor="@color/kn_text" android:textSize="19sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+            android:text="Step 2 of 3" android:textColor="@color/kn_text2" android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginTop="10dp">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/kn_teal" />
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginHorizontal="6dp" android:background="@color/kn_teal" />
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/kn_border" />
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:text="What's your name and\nbirthday?" android:textColor="@color/kn_text" android:textSize="24sp" android:textStyle="bold" />
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:layout_alignParentEnd="true"
+            android:background="@drawable/kn_pill_outline" android:backgroundTint="@null" android:padding="16dp"
+            android:src="@drawable/ic_people" app:tint="@color/kn_text2" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="6dp"
+            android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First name" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <EditText android:id="@+id/etFirstName" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:padding="0dp" android:text="Jacob" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="6dp"
+            android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last name" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <EditText android:id="@+id/etLastName" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:padding="0dp" android:text="West" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Birthday ⓘ" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Day" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14   ⌄" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Month" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mar   ⌄" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Year" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2004   ⌄" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Gender" android:textColor="@color/kn_text" android:textSize="14sp" android:textStyle="bold" />
+    <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:orientation="horizontal">
+        <RadioButton android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/kn_card" android:buttonTint="@color/kn_teal" android:paddingStart="6dp" android:text="Female" android:textSize="14sp" />
+        <RadioButton android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:background="@drawable/kn_card" android:buttonTint="@color/kn_teal" android:checked="true" android:paddingStart="6dp" android:text="Male" android:textSize="14sp" android:textStyle="bold" />
+        <RadioButton android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/kn_card" android:buttonTint="@color/kn_teal" android:paddingStart="6dp" android:text="Custom" android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/kn_card" android:orientation="vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textColor="@color/kn_text2" android:textSize="12sp" />
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:inputType="textEmailAddress" android:padding="0dp" android:text="jacob.west@mail.com" android:textColor="@color/kn_text" android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/kn_card" android:gravity="center_vertical" android:paddingHorizontal="14dp" android:paddingVertical="6dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New password" android:textColor="@color/kn_text2" android:textSize="12sp" />
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:inputType="textPassword" android:padding="0dp" android:text="password12" android:textColor="@color/kn_text" android:textSize="16sp" />
+        </LinearLayout>
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_visibility" app:tint="@color/kn_text2" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+        <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/kn_rust" />
+        <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:layout_marginHorizontal="6dp" android:background="@color/kn_rust" />
+        <View android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/kn_border" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:text="Medium" android:textColor="@color/kn_rust" android:textSize="13sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:buttonTint="@color/kn_teal" android:checked="true"
+        android:text="I agree to the Kinnect Terms and Privacy Policy." android:textSize="13sp" />
+
+    <Button android:id="@+id/btnSubmitSignUp" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp"
+        android:background="@drawable/kn_pill_teal" android:backgroundTint="@null" android:text="Create account" android:textAllCaps="false"
+        android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvBackToLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="12dp"
+        android:text="Already have an account? Log in" android:textColor="@color/kn_teal" android:textSize="14sp" android:textStyle="bold" />
+</LinearLayout>

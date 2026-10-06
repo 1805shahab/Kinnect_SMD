@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white">
+
+    <RelativeLayout android:id="@+id/chatHeader" android:layout_width="match_parent" android:layout_height="60dp" android:paddingHorizontal="12dp">
+        <ImageButton android:id="@+id/chat_back" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true"
+            android:background="@null" android:padding="8dp" android:src="@drawable/ic_arrow_back" app:tint="@color/kn_text" android:contentDescription="@null" />
+        <RelativeLayout android:id="@+id/avatarWrapChat" android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_toEndOf="@id/chat_back">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/kn_circle"
+                android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="15sp" android:textStyle="bold" />
+            <View android:layout_width="12dp" android:layout_height="12dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+                android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_online" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" android:layout_toEndOf="@id/avatarWrapChat" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aisha Khan" android:textColor="@color/kn_text" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Active now" android:textColor="@color/kn_text2" android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/btn_voice_call" android:layout_width="40dp" android:layout_height="40dp" android:background="@null" android:padding="8dp"
+                android:src="@drawable/ic_phone" app:tint="@color/kn_teal" android:contentDescription="@null" />
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="8dp" android:src="@drawable/ic_video_call" app:tint="@color/kn_teal" />
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="8dp" android:src="@drawable/ic_info" app:tint="@color/kn_teal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/chatDiv" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@id/chatHeader" android:background="@color/kn_border" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottomChatBar"
+        android:layout_below="@id/chatDiv" android:orientation="vertical" android:padding="12dp">
+
+        <TextView android:layout_width="72dp" android:layout_height="72dp" android:layout_gravity="center_horizontal" android:background="@drawable/kn_circle"
+            android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="6dp"
+            android:text="Aisha Khan" android:textColor="@color/kn_text" android:textSize="20sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:text="You're friends on Kinnect · Lives in Karachi" android:textColor="@color/kn_text2" android:textSize="12sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginVertical="12dp"
+            android:text="TODAY 4:49 PM" android:textColor="@color/kn_text2" android:textSize="11sp" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="38dp" android:background="@drawable/kn_bubble_in"
+            android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Hey! Are you still coming Saturday?" android:textColor="@color/kn_text" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="38dp" android:layout_marginTop="3dp" android:background="@drawable/kn_bubble_in"
+            android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Lina booked the table for 8" android:textColor="@color/kn_text" android:textSize="14sp" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="bottom">
+            <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon"
+                android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:background="@drawable/kn_bubble_in"
+                android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Bring the camera" android:textColor="@color/kn_text" android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="12dp" android:background="@drawable/kn_bubble_out"
+            android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Yes, obviously" android:textColor="@color/white" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="3dp" android:background="@drawable/kn_bubble_out"
+            android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Already charged both batteries" android:textColor="@color/white" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="10dp"
+            android:text="You replied to Aisha" android:textColor="@color/kn_text2" android:textSize="11sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:background="@drawable/kn_bubble_in"
+            android:paddingHorizontal="14dp" android:paddingVertical="6dp" android:text="Lina booked the table for 8" android:textColor="@color/kn_text2" android:textSize="12sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="2dp" android:background="@drawable/kn_bubble_out"
+            android:paddingHorizontal="14dp" android:paddingVertical="9dp" android:text="Perfect, I'll be there by 7:45" android:textColor="@color/white" android:textSize="14sp" />
+        <View android:layout_width="180dp" android:layout_height="100dp" android:layout_gravity="end" android:layout_marginTop="3dp" android:background="@drawable/bg_cover_purple" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="38dp" android:layout_marginTop="8dp" android:background="@drawable/kn_bubble_in"
+            android:paddingHorizontal="16dp" android:paddingVertical="8dp" android:text="● ● ●" android:textColor="@color/kn_text2" android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/bottomChatBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:background="@color/white" android:gravity="center_vertical" android:padding="8dp">
+        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:padding="8dp" android:src="@drawable/ic_add_circle" app:tint="@color/kn_teal" />
+        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:padding="8dp" android:src="@drawable/ic_camera" app:tint="@color/kn_teal" />
+        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:padding="8dp" android:src="@drawable/ic_photo" app:tint="@color/kn_teal" />
+        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:padding="8dp" android:src="@drawable/ic_mic" app:tint="@color/kn_teal" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:layout_marginHorizontal="4dp"
+            android:background="@drawable/kn_pill_gray" android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="10dp">
+            <EditText android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null"
+                android:hint="@string/chat_message_hint" android:textColorHint="@color/kn_text2" android:textSize="15sp" />
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_emoji_smile" app:tint="@color/kn_teal" />
+        </LinearLayout>
+        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:padding="8dp" android:src="@drawable/ic_thumb_up" app:tint="@color/kn_teal" />
+    </LinearLayout>
+</RelativeLayout>

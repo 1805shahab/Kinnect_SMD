@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#111111">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="80dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/image6" />
+        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#33000000" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:background="@drawable/kn_square_tint"
+            android:paddingHorizontal="20dp" android:paddingVertical="10dp" android:rotation="-4" android:text="Karachi nights" android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+
+        <LinearLayout android:id="@+id/llStoryProgress" android:layout_width="match_parent" android:layout_height="3dp" android:layout_margin="10dp">
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="4dp" android:background="@color/white" />
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="4dp" android:background="@color/white" />
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="4dp" android:background="#99FFFFFF" />
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#44FFFFFF" />
+        </LinearLayout>
+
+        <RelativeLayout android:id="@+id/storyHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/llStoryProgress" android:paddingHorizontal="12dp">
+            <TextView android:id="@+id/avatarStory" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_green"
+                android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="13sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_toEndOf="@id/avatarStory" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Omar Farooq" android:textColor="@color/white" android:textSize="15sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5h · 🌐" android:textColor="#CCFFFFFF" android:textSize="12sp" />
+            </LinearLayout>
+            <TextView android:id="@+id/btnCloseStory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:padding="8dp" android:text="✕" android:textColor="@color/white" android:textSize="20sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_toStartOf="@id/btnCloseStory" android:padding="8dp" android:text="•••" android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center_vertical" android:paddingHorizontal="8dp" android:paddingBottom="14dp">
+        <TextView android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/kn_pill_outline" android:backgroundTint="@null" android:gravity="center_vertical" android:paddingHorizontal="20dp"
+            android:text="Send message..." android:textColor="#99FFFFFF" android:textSize="15sp" />
+        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal" android:padding="12dp" android:src="@drawable/ic_thumb_up" app:tint="@color/white" />
+        <TextView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_love" android:gravity="center" android:text="❤" android:textColor="@color/white" android:textSize="20sp" />
+        <TextView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_gold" android:gravity="center" android:text="😆" android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#111111">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="80dp"
+        android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_cam">
+        <View android:layout_width="150dp" android:layout_height="150dp" android:layout_alignParentEnd="true" android:layout_marginTop="120dp" android:layout_marginEnd="-60dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_sun" />
+        <View android:layout_width="match_parent" android:layout_height="260dp" android:layout_alignParentBottom="true" android:background="@drawable/kn_square_tint" android:backgroundTint="#628050" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="30dp" android:layout_marginTop="120dp"
+            android:background="@drawable/kn_square_tint" android:backgroundTint="@color/kn_rust" android:paddingHorizontal="20dp" android:paddingVertical="10dp" android:rotation="2"
+            android:text="Saturday plans" android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="14dp" android:layout_marginBottom="12dp" android:orientation="vertical">
+            <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/kn_circle" android:backgroundTint="#66C93450" android:gravity="center" android:text="❤" android:textColor="@color/white" android:textSize="12sp" />
+            <TextView android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="6dp" android:background="@drawable/kn_circle" android:backgroundTint="#99C93450" android:gravity="center" android:text="❤" android:textColor="@color/white" android:textSize="14sp" />
+            <TextView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="6dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_love" android:gravity="center" android:text="❤" android:textColor="@color/white" android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp">
+            <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/white" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:id="@+id/avatarYou" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_teal"
+                    android:gravity="center" android:text="JW" android:textColor="@color/white" android:textSize="13sp" android:textStyle="bold" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_toEndOf="@id/avatarYou" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your story" android:textColor="@color/white" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11h · Close friends" android:textColor="#CCFFFFFF" android:textSize="12sp" />
+                </LinearLayout>
+                <ImageButton android:id="@+id/your_story_close" android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentEnd="true" android:background="@null" android:padding="8dp"
+                    android:src="@drawable/ic_close" app:tint="@color/white" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center" android:paddingBottom="12dp" android:paddingHorizontal="8dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="30dp" android:layout_height="30dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_maroon" android:gravity="center" android:text="AK" android:textColor="@color/white" android:textSize="9sp" android:textStyle="bold" />
+                <TextView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginStart="-8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_purple" android:gravity="center" android:text="LM" android:textColor="@color/white" android:textSize="9sp" android:textStyle="bold" />
+                <TextView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginStart="-8dp" android:background="@drawable/kn_circle" android:backgroundTint="@color/kn_green" android:gravity="center" android:text="OF" android:textColor="@color/white" android:textSize="9sp" android:textStyle="bold" />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Seen by 24" android:textColor="@color/white" android:textSize="12sp" />
+        </LinearLayout>
+        <Button android:id="@+id/btn_add_to_story" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:backgroundTint="@null"
+            android:drawableTop="@drawable/ic_videocam" app:drawableTint="@color/white" android:text="Create" android:textAllCaps="false" android:textColor="@color/white" android:textSize="12sp" />
+        <LinearLayout android:id="@+id/btn_save_story" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" android:focusable="true">
+            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_thumb_up" app:tint="@color/white" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Highlight" android:textColor="@color/white" android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_send" app:tint="@color/white" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Send" android:textColor="@color/white" android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_more_horiz" app:tint="@color/white" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="More" android:textColor="@color/white" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

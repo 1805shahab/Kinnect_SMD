@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white" android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52dp" android:paddingHorizontal="8dp">
+        <Button android:id="@+id/edit_profile_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:background="@null" android:backgroundTint="@null" android:minWidth="0dp" android:text="Cancel" android:textAllCaps="false" android:textColor="@color/kn_text" android:textSize="15sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+            android:text="@string/edit_profile_title" android:textColor="@color/kn_text" android:textSize="18sp" android:textStyle="bold" />
+        <Button android:id="@+id/edit_profile_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            android:background="@null" android:backgroundTint="@null" android:minWidth="0dp" android:text="@string/profile_save" android:textAllCaps="false" android:textColor="@color/kn_teal" android:textSize="15sp" android:textStyle="bold" />
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/kn_border" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="16dp" android:paddingTop="8dp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile picture" android:textColor="@color/kn_text" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Edit" android:textColor="@color/kn_teal" android:textSize="15sp" android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView android:layout_width="84dp" android:layout_height="84dp" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:background="@drawable/kn_circle"
+            android:backgroundTint="@color/kn_teal" android:gravity="center" android:text="JW" android:textColor="@color/white" android:textSize="30sp" android:textStyle="bold" />
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cover photo" android:textColor="@color/kn_text" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Edit" android:textColor="@color/kn_teal" android:textSize="15sp" android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="8dp">
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_cover_sky" />
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_margin="8dp"
+                android:background="@drawable/kn_circle" android:padding="9dp" android:src="@drawable/ic_camera" app:tint="@color/kn_text" />
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Name" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:text="Jacob West" android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Username" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_username" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:text="jacob.west" android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Website" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_website" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:hint="Website" android:textColorHint="@color/kn_text2" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Bio" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_bio" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:text="Digital goodies designer." android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Switch to professional mode" android:textColor="@color/kn_teal" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Private information" android:textColor="@color/kn_text" android:textSize="18sp" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Email" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_email" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:inputType="textEmailAddress" android:text="jacob.west@mail.com" android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Phone" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_phone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:inputType="phone" android:text="+92 300 1234567" android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="90dp" android:background="@color/kn_border" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center_vertical">
+            <TextView android:layout_width="90dp" android:layout_height="wrap_content" android:text="Gender" android:textColor="@color/kn_text" android:textSize="14sp" />
+            <EditText android:id="@+id/edit_gender" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@null" android:text="Male" android:textColor="@color/kn_text" android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
